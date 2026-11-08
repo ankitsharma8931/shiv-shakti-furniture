@@ -1246,3 +1246,33 @@ select:focus-visible {
   }
 
 }
+/* MOBILE ORDER MANAGEMENT FIX */
+
+@media screen and (max-width: 768px) {
+
+  table:has(#ordersBody) {
+    display: block;
+    width: 100%;
+    min-width: 850px;
+    overflow-x: auto;
+    white-space: normal;
+  }
+
+  table:has(#ordersBody) th,
+  table:has(#ordersBody) td {
+    min-width: 75px;
+    padding: 10px 8px;
+    vertical-align: middle;
+  }
+
+  #ordersBody td:last-child {
+    min-width: 190px;
+  }
+
+  #ordersBody button {
+    display: inline-block;
+    margin: 3px;
+    white-space: nowrap;
+  }
+
+}
